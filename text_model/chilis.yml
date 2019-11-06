@@ -1,0 +1,42 @@
+name: chilis
+channels:
+  - anaconda
+  - defaults
+dependencies:
+  - beautifulsoup4=4.8.1=py37_0
+  - blas=1.0=mkl
+  - certifi=2019.9.11=py37_0
+  - click=7.0=py37_0
+  - flask=1.1.1=py_0
+  - flask-wtf=0.14.2=py37_1
+  - icc_rt=2019.0.0=h0cc432a_1
+  - intel-openmp=2019.5=281
+  - itsdangerous=1.1.0=py37_0
+  - jinja2=2.10.3=py_0
+  - joblib=0.13.2=py37_0
+  - markupsafe=1.1.1=py37he774522_0
+  - mkl=2019.5=281
+  - mkl-service=2.3.0=py37hb782905_0
+  - mkl_fft=1.0.14=py37h14836fe_0
+  - mkl_random=1.1.0=py37h675688f_0
+  - nltk=3.4.5=py37_0
+  - numpy=1.17.2=py37hc73f44b_0
+  - numpy-base=1.17.2=py37hc3f5095_0
+  - pandas=0.25.2=py37ha925a31_0
+  - pip=19.3.1=py37_0
+  - python=3.7.1=h33f27b4_4
+  - python-dateutil=2.8.0=py37_0
+  - pytz=2019.3=py_0
+  - scikit-learn=0.21.3=py37h6288b17_0
+  - scipy=1.3.1=py37h29ff71c_0
+  - setuptools=41.6.0=py37_0
+  - six=1.12.0=py37_0
+  - soupsieve=1.9.3=py37_0
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.16.27012=hf0eaf9b_0
+  - werkzeug=0.16.0=py_0
+  - wheel=0.33.6=py37_0
+  - wincertstore=0.2=py37_0
+  - wtforms=2.2.1=py37_0
+prefix: C:\Users\scheerja\AppData\Local\Continuum\anaconda3\envs\chilis
+

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<b>Class Probabilities:</b>
+<br>
+<table>
+{% for item in items %}
+<TR>
+   <TD class="c1">{{item.name}}</TD>
+   <TD class="c2">{{item.probability}}</TD>
+</TR>
+{% endfor %}
+</table>
+<br>
+<b>Test Accuracy Score:</b>
+
+{{ score }}
+<br>
+<br>
+<b>Pipeline Details:</b>
+<br>
+{% for detail in pipe_detail %}
+	{{ detail }}
+	<br>
+	<br>
+
+{% endfor %}
+
+
+
+{% endblock %}
