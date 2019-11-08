@@ -54,7 +54,7 @@ df = df[df['character'].isin(characters)]
 #subset phrases over 5 words
 df = df[df['line'].str.split().str.len() > 5]
 
-#generate random samples n=500 per class for model evaluation
+#generate random samples n=200 per class for model evaluation
 '''
 size = 200        # sample size
 replace = True  # with replacement
