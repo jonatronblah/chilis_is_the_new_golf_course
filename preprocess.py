@@ -54,6 +54,14 @@ df = df[df['character'].isin(characters)]
 #subset phrases over 5 words
 df = df[df['line'].str.split().str.len() > 5]
 
+#generate random samples n=500 per class for model evaluation
+'''
+size = 200        # sample size
+replace = True  # with replacement
+np.random.seed(seed=123456)
+fn = lambda obj: obj.loc[np.random.choice(obj.index, size, replace),:]
+df = df.groupby('character', as_index=False).apply(fn)
+'''
 
 #train/test split, transform, vectorize
 df['processed'] = df['line'].apply(lambda x: text_process(x))
@@ -83,6 +91,9 @@ classifier.fit(text_bow_train, y_train)
 
 office_pipe = make_pipeline(bow_transformer, classifier)
 
+office_pipe.score(X_train, y_train)
+
+office_pipe.score(X_test, y_test)
 
 pickle.dump(office_pipe, open(r'C:\Users\jonathan\Desktop\DAPT Docs\fall 2019\text mining\group project\multiNB_bow.sav', 'wb'))
 
