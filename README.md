@@ -1,6 +1,6 @@
 # chilis_is_the_new_golf_course
 
-There are a few distinct components in this repo:
+There are a few distinct components to this repo:
 
 1. A jupyter notebook used to scrape officequotes.net for structured, labeled quotes from office characters.
 
